@@ -28,38 +28,19 @@ function Land() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      {/* Header */}
-      <header className="bg-white shadow-sm">
+      <header className= "bg-white shadow-sm ">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            {/* Logo */}
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <Clock className="w-5 h-5 text-white" />
               </div>
               <span className="text-xl font-semibold text-gray-900">TimeTracker</span>
             </div>
-            
-            {/* Auth Buttons */}
-            <div className="flex items-center space-x-3">
-              <button className="text-gray-600 hover:text-gray-900 px-4 py-2 text-sm font-medium transition-colors">
-                <Link to="/login">
-                 login
-                </Link>
-              </button>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
-                <Link to="/sign">
-                 sign up
-                </Link>
-              </button>
-            </div>
           </div>
         </div>
       </header>
-
-      {/* Main Content */}
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        {/* Hero Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Simple Time Tracking
@@ -71,14 +52,12 @@ function Land() {
           </p>
           <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors inline-flex items-center group">
             <Link
-            to="/sign">
+            to="/time">
             Get Started Free
             </Link>
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
-
-        {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {features.map((feature, index) => (
             <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow text-center">
@@ -91,7 +70,6 @@ function Land() {
           ))}
         </div>
 
-        {/* Simple CTA */}
         <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Ready to take control of your time?
@@ -102,7 +80,7 @@ function Land() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
             <Link
-            to="/sign">
+            to="/time">
             Get Started Free
             </Link>
             </button>
@@ -110,7 +88,6 @@ function Land() {
         </div>
       </main>
 
-      {/* Simple Footer */}
       <footer className="bg-gray-900 text-white py-8 mt-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">

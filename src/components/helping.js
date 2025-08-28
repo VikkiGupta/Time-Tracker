@@ -123,21 +123,9 @@ function Help() {
                                 </Link>
                             ))}
                         </div>
-                        
-                        {/* Logout Button */}
-                        <div className="p-4 border-t border-gray-200">
-                            <Link
-                                to="/login"
-                                className="flex items-center gap-3 w-full px-3 py-3 rounded-lg text-sm font-medium text-red-600 hover:bg-red-50 transition-colors"
-                            >
-                                <LogOut className="w-5 h-5" />
-                                Logout
-                            </Link>
-                        </div>
                     </div>
                 </aside>
 
-                {/* Overlay for mobile */}
                 {isSidebarOpen && (
                     <div 
                         className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-30"
