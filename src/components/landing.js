@@ -28,7 +28,7 @@ function Land() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      <header className= "bg-white shadow-sm ">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm ">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
@@ -40,7 +40,7 @@ function Land() {
           </div>
         </div>
       </header>
-      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <main className="pt-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Simple Time Tracking
@@ -51,9 +51,8 @@ function Land() {
             Perfect for freelancers, teams, and anyone who wants to make the most of their time.
           </p>
           <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors inline-flex items-center group">
-            <Link
-            to="/time">
-            Get Started Free
+            <Link to="/time">
+              Get Started Free
             </Link>
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
@@ -79,10 +78,9 @@ function Land() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
-            <Link
-            to="/time">
-            Get Started Free
-            </Link>
+              <Link to="/time">
+                Get Started Free
+              </Link>
             </button>
           </div>
         </div>

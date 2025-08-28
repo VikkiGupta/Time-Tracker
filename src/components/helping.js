@@ -65,7 +65,7 @@ function Help() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
             {/* Header */}
-            <header className="bg-white shadow-sm border-b border-gray-200">
+            <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm border-b border-gray-200">
                 <div className="px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-16">
                         {/* Left side - Logo and Menu Toggle */}
@@ -96,7 +96,7 @@ function Help() {
                 </div>
             </header>
 
-            <div className="flex">
+            <div className="flex pt-16"> {/* Added pt-16 here to offset fixed header height */}
                 {/* Sidebar */}
                 <aside className={`${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} 
                     lg:translate-x-0 fixed lg:static inset-y-0 left-0 z-40 w-64 bg-white shadow-lg border-r border-gray-200 transition-transform duration-300 ease-in-out`}>
@@ -204,7 +204,7 @@ function Help() {
                                                         ? 'bg-blue-600' 
                                                         : 'bg-gradient-to-r from-purple-600 to-pink-600'}`}>
                                                         {message.sender === 'user' ? 
-                                                            <User className="w-4 h-4 text-white" /> : 
+                                                            <User  className="w-4 h-4 text-white" /> : 
                                                             <Bot className="w-4 h-4 text-white" />
                                                         }
                                                     </div>
@@ -288,11 +288,4 @@ function Help() {
     );
 }
 
- export default Help;//git rm --cached .parcel-cache/data.mdb
-// git rm --cached node_modules/@parcel/rust-win32-x64-msvc/parcel-node-bindings.win32-x64-msvc.node
-
-// git lfs install
-// git lfs track "*.mdb"  # Track .mdb files
-// git lfs track "*.node" # Track .node files
-
-// git add .gitattributes
+export default Help;

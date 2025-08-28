@@ -14,7 +14,7 @@ function Time() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      <header className="bg-white shadow-sm border-b border-gray-200">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm border-b border-gray-200">
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-4">
@@ -43,7 +43,7 @@ function Time() {
         </div>
       </header>
 
-      <div className="flex">
+      <div className="flex pt-16"> {/* Added pt-16 here to offset fixed header height */}
         <aside className={`${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} 
           lg:translate-x-0 fixed lg:static inset-y-0 left-0 z-40 w-64 bg-white shadow-lg border-r border-gray-200 transition-transform duration-300 ease-in-out`}>
           
